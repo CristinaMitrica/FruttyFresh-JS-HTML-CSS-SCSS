@@ -1,0 +1,9 @@
+html { 
+    font-family: var(--font-family); 
+    font-size: 100%; 
+}
+
+body { font: var(--font-body); color: var(--color-black); }
+h1   { font: var(--font-h1); margin-bottom: var(--spacing-40); }
+h2   { font: var(--font-h2); margin-bottom: var(--spacing-32); }
+h3   { font: var(--font-h3); }
