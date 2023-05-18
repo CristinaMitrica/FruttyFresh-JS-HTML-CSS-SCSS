@@ -1,6 +1,4 @@
 @mixin sizings {
     --input-and-btn-height: #{pxToRem(48px)};
     --header-height: #{pxToRem(72px)};
-    --img-height: #{pxToRem(274px)};
-    --img-min-width: #{pxToRem(350px)};
 }

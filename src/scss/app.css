@@ -163,8 +163,6 @@ body {
   --border-width-1: 0.0625rem;
   --input-and-btn-height: 3rem;
   --header-height: 4.5rem;
-  --img-height: 17.125rem;
-  --img-min-width: 21.875rem;
 }
 
 html {
@@ -329,7 +327,7 @@ input {
 
 .all-products__cards {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(var(--img-min-width), 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(21.875rem, 1fr));
   gap: var(--spacing-40);
 }
 
@@ -342,7 +340,7 @@ input {
 .card__img-frame {
   border: var(--border-width-1) solid var(--color-brown);
   border-radius: var(--border-radius-4);
-  height: var(--img-height);
+  height: 17.125rem;
 }
 
 .card__img {

@@ -1,4 +1,5 @@
 import HomeComponent from './components/pages/home/home.js';
+import HeaderComponent from './components/organisms/header/header.js';
 
 class App {
     constructor() {}
@@ -12,16 +13,13 @@ class App {
     }
 
     renderHTML() {
-        const activePageHTML = this._getActivePageHTML();
         const $body = document.querySelector("body");
         const html = `
-          <div>
-            <header></header>
-                <main>
-                    ${activePageHTML}
-                </main>
+            ${new HeaderComponent().renderHTML()}
+            <main>
+                ${new HomeComponent().renderHTML()}
+            </main>
             <footer></footer>
-          </div>
         `;
 
         $body.innerHTML = html;
