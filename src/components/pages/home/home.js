@@ -8,7 +8,6 @@ export default class HomeComponent {
 
     renderHTML() {
         return `
-            <main class="main">
             <div class="all-products">
                 <h1>Todos los productos</h1>
                 <div class="all-products__filters">
@@ -71,17 +70,8 @@ export default class HomeComponent {
                         <p>5€</p>
                         <btn class="card__btn btn--filled">Añadir a la cesta</btn>
                     </div>
-                        
                 </div>
-
-                <!--<h1>${this._title}</h1>
-                ${(new CardComponent).renderHTML()};-->
             </div>
-        </main>
-
-            <footer class="footer">
-            </footer>
-            
         `
     }
 }

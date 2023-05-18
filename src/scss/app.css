@@ -307,7 +307,12 @@ input {
   width: 9.25rem;
 }
 
-.main {
+.footer {
+  height: var(--header-height);
+  background-color: var(--color-low-grey);
+}
+
+main {
   margin-top: var(--header-height);
   padding: var(--spacing-64) var(--spacing-32);
 }
@@ -347,9 +352,4 @@ input {
   -o-object-fit: contain;
      object-fit: contain;
   height: 100%;
-}
-
-.footer {
-  height: var(--header-height);
-  background-color: var(--color-low-grey);
 }/*# sourceMappingURL=app.css.map */

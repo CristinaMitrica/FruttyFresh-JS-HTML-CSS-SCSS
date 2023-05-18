@@ -1,5 +1,6 @@
 import HomeComponent from './components/pages/home/home.js';
 import HeaderComponent from './components/organisms/header/header.js';
+import FooterComponent from './components/organisms/footer/footer.js';
 
 class App {
     constructor() {}
@@ -19,7 +20,7 @@ class App {
             <main>
                 ${new HomeComponent().renderHTML()}
             </main>
-            <footer></footer>
+            ${new FooterComponent().renderHTML()}
         `;
 
         $body.innerHTML = html;
