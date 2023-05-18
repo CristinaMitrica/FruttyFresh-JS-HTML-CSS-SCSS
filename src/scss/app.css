@@ -138,10 +138,9 @@ body {
   --color-white: #fff;
   --color-low-grey: #f5f5f5;
   --color-grey: #bfbfbf;
-  --color-strong-grey: #535151;
   --color-black: #242221;
   --color-blue: #1e24bd;
-  --color-red: #e00000;
+  --color-brown: #bd741e;
   --color-transparent: #00000000;
   --font-family: Arial, sans-serif;
   --font-weight-bold: 700;
@@ -160,10 +159,12 @@ body {
   --spacing-40: 2.5rem;
   --spacing-64: 4rem;
   --zindex-header: 100;
-  --border-radius-4: 4px;
-  --border-width-1: 1px;
-  --input-and-btn-height: 2.75rem;
+  --border-radius-4: 0.25rem;
+  --border-width-1: 0.0625rem;
+  --input-and-btn-height: 3rem;
   --header-height: 4.5rem;
+  --img-height: 17.125rem;
+  --img-min-width: 21.875rem;
 }
 
 html {
@@ -190,14 +191,15 @@ h3 {
   font: var(--font-h3);
 }
 
-.icon {
-  --icon-size-18: 1rem;
+.icon--shopping-bag, .icon--market {
+  --icon-size-16: 1rem;
   --icon-size-24: 1.5rem;
   --icon-size: var(--icon-size-24);
   --icon-color: var(--color-black);
   background-color: var(--icon-color);
   height: var(--icon-size);
   width: var(--icon-size);
+  min-width: var(--icon-size);
   display: inline-block;
   -webkit-mask-size: contain;
           mask-size: contain;
@@ -208,27 +210,17 @@ h3 {
   vertical-align: middle;
 }
 
-.icon--moto-logo {
-  -webkit-mask-image: url(../assets/icons/moto-logo.svg);
-          mask-image: url(../assets/icons/moto-logo.svg);
+.icon--market {
+  -webkit-mask-image: url(../assets/icons/market.svg);
+          mask-image: url(../assets/icons/market.svg);
 }
 
-.icon--user {
-  -webkit-mask-image: url(../assets/icons/user.svg);
-          mask-image: url(../assets/icons/user.svg);
+.icon--shopping-bag {
+  -webkit-mask-image: url(../assets/icons/shopping-bag.svg);
+          mask-image: url(../assets/icons/shopping-bag.svg);
 }
 
-.icon--burguer-menu {
-  -webkit-mask-image: url(../assets/icons/burguer-menu.svg);
-          mask-image: url(../assets/icons/burguer-menu.svg);
-}
-
-.icon--discount {
-  -webkit-mask-image: url(../assets/icons/discount.svg);
-          mask-image: url(../assets/icons/discount.svg);
-}
-
-.btn {
+.btn--text, .btn--filled {
   padding-left: var(--spacing-12);
   padding-right: var(--spacing-12);
   display: flex;
@@ -236,10 +228,11 @@ h3 {
   justify-content: center;
   height: var(--input-and-btn-height);
   border-radius: var(--border-radius-4);
+  gap: var(--spacing-12);
 }
 
 .btn--filled {
-  background-color: var(--color-black);
+  background-color: var(--color-brown);
   color: var(--color-white);
 }
 
@@ -273,8 +266,8 @@ input {
   color: var(--color-black);
 }
 
-.chip {
-  padding: var(--spacing-8) var(--spacing-12);
+.chip--descriptor, .chip--unselected, .chip--selected {
+  padding: var(--spacing-4) var(--spacing-12);
   border-radius: var(--border-radius-4);
 }
 
@@ -295,4 +288,70 @@ input {
 
 .hide-accesibility {
   display: none;
+}
+
+.header {
+  height: var(--header-height);
+  background-color: var(--color-low-grey);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--spacing-12) var(--spacing-32);
+  position: fixed;
+  z-index: var(--zindex-header);
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.header__logo {
+  height: 1.25rem;
+  width: 9.25rem;
+}
+
+.main {
+  margin-top: var(--header-height);
+  padding: var(--spacing-64) var(--spacing-32);
+}
+
+.all-products__filters {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--spacing-16);
+  text-align: center;
+  margin-bottom: var(--spacing-32);
+}
+@media (min-width: 30rem) {
+  .all-products__filters {
+    display: flex;
+  }
+}
+
+.all-products__cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(var(--img-min-width), 1fr));
+  gap: var(--spacing-40);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-16);
+}
+
+.card__img-frame {
+  border: var(--border-width-1) solid var(--color-brown);
+  border-radius: var(--border-radius-4);
+  height: var(--img-height);
+}
+
+.card__img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  height: 100%;
+}
+
+.footer {
+  height: var(--header-height);
+  background-color: var(--color-low-grey);
 }/*# sourceMappingURL=app.css.map */
