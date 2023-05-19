@@ -9,11 +9,24 @@
     gap: var(--spacing-12);
 }
 
-.btn--filled {
+.btn--filled-brown {
     @extend %btn;
     background-color: var(--color-brown);
     color: var(--color-white);
 }
+
+.btn--filled-black {
+    @extend %btn;
+    background-color: var(--color-black);
+    color: var(--color-white);
+}
+
+.btn--filled-red {
+    @extend %btn;
+    background-color: var(--color-red);
+    color: var(--color-white);
+}
+
 
 .btn--text {
     @extend %btn;

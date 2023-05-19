@@ -12,7 +12,7 @@ export default class ProductCardComponent {
             </div>
             <h3>${this._name}</h3>
             <p>${this._price}€</p>
-            <btn class="product-card__btn btn--filled">Añadir a la cesta</btn>
+            <btn class="product-card__btn btn--filled-brown">Añadir a la cesta</btn>
         <div>
         `
     }

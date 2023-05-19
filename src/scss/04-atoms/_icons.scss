@@ -18,7 +18,8 @@
 
 $icons: 
     market,
-    shopping-bag
+    shopping-bag,
+    arrow-left
 ;
 
 @each $icon in $icons {

@@ -1,4 +1,5 @@
-import AllProductsComponent from './components/pages/home/home.js';
+import AllProductsComponent from './components/pages/all-products/all-products.js';
+import CartCheckoutComponent from './components/pages/cart-checkout/cart-checkout.js';
 import HeaderComponent from './components/organisms/header/header.js';
 import FooterComponent from './components/organisms/footer/footer.js';
 
@@ -18,7 +19,8 @@ class App {
         const html = `
             ${new HeaderComponent().renderHTML()}
             <main>
-                ${new AllProductsComponent().renderHTML()}
+                <!--${new AllProductsComponent().renderHTML()}-->
+                ${new CartCheckoutComponent().renderHTML()}
             </main>
             ${new FooterComponent().renderHTML()}
         `;
