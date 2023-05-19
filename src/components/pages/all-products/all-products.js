@@ -1,6 +1,6 @@
 import ProductCardComponent from '../../molecules/product-card/product-card.js';
 
-export default class HomeComponent {
+export default class AllProductsComponent {
     constructor() {}
 
     renderHTML() {
