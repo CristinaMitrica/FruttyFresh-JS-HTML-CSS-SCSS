@@ -5,9 +5,17 @@
 }
 
 .icon--arrow-left {
-    fill: var(--color-blue);
+    background-color: var(--color-blue)
 }
 
+.cart-checkout__purchaseTotal {
+    @include breakpoint($break-medium) {
+        display: flex;
+        flex-direction: row-reverse;
+        gap: var(--spacing-48);
+        justify-content: space-between;
+    }
+}
 .cart-checkout__shoppingTotal {
     padding: var(--spacing-16);
     background-color: var(--color-low-grey);
@@ -17,6 +25,11 @@
     flex-direction: column;
     gap: var(--spacing-16);
     margin-bottom: var(--spacing-40);
+
+    @include breakpoint($break-medium) {
+        max-height: pxToRem(267px);
+        min-width: pxToRem(436px);
+    }
 }
 
 .cart-checkout__form {

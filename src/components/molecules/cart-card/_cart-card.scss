@@ -1,7 +1,7 @@
 .cart-card {
     display: grid;
     grid-template-columns: 1fr 3fr;
-    gap: var(--spacing-16);
+    gap: var(--spacing-40);
 }
 
 .cart-card__img-frame {
@@ -19,4 +19,15 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    @include breakpoint($break-large) {
+        flex-direction: row;
+        justify-content: space-between;      
+    }
+}
+
+.btn--filled-brown {
+    @include breakpoint($break-large) {
+        width: pxToRem(164px)    
+    }
 }

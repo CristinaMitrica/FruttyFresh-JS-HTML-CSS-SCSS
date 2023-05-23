@@ -13,18 +13,20 @@ export default class CartCheckoutComponent {
                 </a>
                 <h1>Cesta de la compra</h1>
                 <h2>4 productos en la cesta</h2>
-                <div class="cart-checkout__shoppingTotal">
-                <p>7 productos seleccionados</p>
-                <h3>Precio total 33€ (con IVA)</h3>
-                <form class="cart-checkout__form">
-                    <label for="email">Email</label>
-                    <input id="email"type="email" placeholder="nombre@gmail.com" />
-                </form>
-                <button class="btn--filled-black" type="button">Comprar</button>
-                </div>
-                <div class="cart-checkout__card">
-                    ${new CartCardComponent('Pera', 5).renderHTML()}
-                </div>
+                <section class="cart-checkout__purchaseTotal">
+                    <div class="cart-checkout__shoppingTotal">
+                    <p>7 productos seleccionados</p>
+                    <h3>Precio total 33€ (con IVA)</h3>
+                    <form class="cart-checkout__form">
+                        <label for="email">Email</label>
+                        <input id="email"type="email" placeholder="nombre@gmail.com" />
+                    </form>
+                    <button class="btn--filled-black" type="button">Comprar</button>
+                    </div>
+                    <div class="cart-checkout__card">
+                        ${new CartCardComponent('Pera', 5).renderHTML()}
+                    </div>
+                </section>
             </div>
         `
     }
