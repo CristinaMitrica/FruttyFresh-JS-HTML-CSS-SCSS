@@ -8,15 +8,15 @@
     background-color: var(--color-blue)
 }
 
-.cart-checkout__purchaseTotal {
+.cart-checkout__purchase-total {
     @include breakpoint($break-medium) {
-        display: flex;
-        flex-direction: row-reverse;
+        display: grid;
+        grid-template-columns: 2fr 1fr;
         gap: var(--spacing-48);
-        justify-content: space-between;
     }
 }
-.cart-checkout__shoppingTotal {
+
+.cart-checkout__shopping-total {
     padding: var(--spacing-16);
     background-color: var(--color-low-grey);
     border: var(--border-width-1) solid var(--color-black);
@@ -29,6 +29,7 @@
     @include breakpoint($break-medium) {
         max-height: pxToRem(267px);
         min-width: pxToRem(436px);
+        order: 1;
     }
 }
 

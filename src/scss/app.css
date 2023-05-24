@@ -225,7 +225,7 @@ h3 {
           mask-image: url(../assets/icons/arrow-left.svg);
 }
 
-.btn--text, .btn--filled-red, .btn--filled-black, .btn--filled-brown {
+.btn--text, .btn--filled {
   padding-left: var(--spacing-12);
   padding-right: var(--spacing-12);
   display: flex;
@@ -236,18 +236,9 @@ h3 {
   gap: var(--spacing-12);
 }
 
-.btn--filled-brown {
-  background-color: var(--color-brown);
-  color: var(--color-white);
-}
-
-.btn--filled-black {
-  background-color: var(--color-black);
-  color: var(--color-white);
-}
-
-.btn--filled-red {
-  background-color: var(--color-red);
+.btn--filled {
+  --button-background-color: var(--color-black);
+  background-color: var(--button-background-color);
   color: var(--color-white);
 }
 
@@ -323,6 +314,10 @@ input {
   height: 100%;
 }
 
+.product-card__btn {
+  background-color: var(--color-brown);
+}
+
 .cart-card {
   display: grid;
   grid-template-columns: 1fr 3fr;
@@ -341,20 +336,19 @@ input {
   height: 100%;
 }
 
-.cart-card__text {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-@media (min-width: 62rem) {
+@media (min-width: 48rem) {
   .cart-card__text {
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     justify-content: space-between;
   }
 }
 
-@media (min-width: 62rem) {
-  .btn--filled-brown {
+.cart-card__btn {
+  background-color: var(--color-red);
+}
+@media (min-width: 48rem) {
+  .cart-card__btn {
     width: 10.25rem;
   }
 }
@@ -418,15 +412,14 @@ main {
 }
 
 @media (min-width: 48rem) {
-  .cart-checkout__purchaseTotal {
-    display: flex;
-    flex-direction: row-reverse;
+  .cart-checkout__purchase-total {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
     gap: var(--spacing-48);
-    justify-content: space-between;
   }
 }
 
-.cart-checkout__shoppingTotal {
+.cart-checkout__shopping-total {
   padding: var(--spacing-16);
   background-color: var(--color-low-grey);
   border: var(--border-width-1) solid var(--color-black);
@@ -437,9 +430,10 @@ main {
   margin-bottom: var(--spacing-40);
 }
 @media (min-width: 48rem) {
-  .cart-checkout__shoppingTotal {
+  .cart-checkout__shopping-total {
     max-height: 16.6875rem;
     min-width: 27.25rem;
+    order: 1;
   }
 }
 

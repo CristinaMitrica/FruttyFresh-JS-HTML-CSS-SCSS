@@ -15,27 +15,8 @@ export default class CartCardComponent {
                     <h3>${this._name}</h3>
                     <p>${this._price}€</p>
                 </div>
-                <btn class="cart-card__btn btn--filled-brown">Añadir a la cesta</btn>
-            </div>
-            <div class="cart-card__img-frame">
-                <img class="cart-card__img" src="assets/images/pera.jpg" alt="Producto pera imagen" loading="lazy">
-            </div>
-            <div class="cart-card__text">
-                <div>
-                    <h3>${this._name}</h3>
-                    <p>${this._price}€</p>
-                </div>
-                <btn class="cart-card__btn btn--filled-brown">Añadir a la cesta</btn>
-            </div>
-            <div class="cart-card__img-frame">
-                <img class="cart-card__img" src="assets/images/pera.jpg" alt="Producto pera imagen" loading="lazy">
-            </div>
-            <div class="cart-card__text">
-                <div>
-                    <h3>${this._name}</h3>
-                    <p>${this._price}€</p>
-                </div>
-                <btn class="cart-card__btn btn--filled-brown">Añadir a la cesta</btn>
+                <btn class="cart-card__btn btn--filled">Añadir a la cesta</btn>
+                
             </div>
         <div>
         `

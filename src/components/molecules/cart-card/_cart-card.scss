@@ -16,18 +16,17 @@
 }
 
 .cart-card__text {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
-    @include breakpoint($break-large) {
-        flex-direction: row;
-        justify-content: space-between;      
+    @include breakpoint($break-medium) {
+        display: grid; 
+        grid-template-columns: 1fr 1fr; 
+        justify-content: space-between;  
     }
 }
 
-.btn--filled-brown {
-    @include breakpoint($break-large) {
+.cart-card__btn {
+    background-color: var(--color-red);
+
+    @include breakpoint($break-medium) {
         width: pxToRem(164px)    
     }
 }
