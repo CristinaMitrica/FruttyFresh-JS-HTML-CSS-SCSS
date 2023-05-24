@@ -1,4 +1,4 @@
-export default class HeaderComponent {
+export default class HeaderOrganism {
     constructor() {
     }
 

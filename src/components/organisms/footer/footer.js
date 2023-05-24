@@ -1,4 +1,4 @@
-export default class FooterComponent {
+export default class FooterOrganism {
     constructor() {
     }
 

@@ -4,8 +4,8 @@
     margin-bottom: var(--spacing-32);
 }
 
-.icon--arrow-left {
-    background-color: var(--color-blue)
+.cart-checkout__icon-back {
+    --icon-color: var(--color-blue);
 }
 
 .cart-checkout__purchase-total {

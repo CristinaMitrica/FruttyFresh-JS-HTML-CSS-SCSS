@@ -1,5 +1,5 @@
-export default class CartCardComponent {
-    constructor(name, price) {
+export default class CartCardMolecule {
+    constructor({name, price}) {
         this._name = name;
         this._price = price;
     }

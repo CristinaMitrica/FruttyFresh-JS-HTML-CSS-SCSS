@@ -1,6 +1,6 @@
-import ProductCardComponent from '../../molecules/product-card/product-card.js';
+import ProductCardMolecule from '../../molecules/product-card/product-card.js';
 
-export default class AllProductsComponent {
+export default class AllProductsPage {
     constructor() {}
 
     renderHTML() {
@@ -14,7 +14,7 @@ export default class AllProductsComponent {
                 </div>
                 <h2>6 resultados de productos</h2>
                 <div class="all-products__cards">
-                    ${new ProductCardComponent('Pera', 5).renderHTML()}
+                    ${new ProductCardMolecule({name: 'Pera', price: 5}).renderHTML()}
                 </div>
             </div>
         `
