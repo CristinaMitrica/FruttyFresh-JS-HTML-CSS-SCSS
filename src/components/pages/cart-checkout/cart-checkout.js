@@ -13,8 +13,6 @@ export default class CartCheckoutPage {
                 </a>
                 <h1>Cesta de la compra</h1>
                 <h2>4 productos en la cesta</h2>
-               
-                <!-- Error Aquesta secció es una component -->
                 <section class="cart-checkout__purchase-total">
                     <div class="cart-checkout__shopping-total">
                     <p>7 productos seleccionados</p>

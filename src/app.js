@@ -19,8 +19,9 @@ class App {
         const html = `
             ${new HeaderOrganism().renderHTML()}
             <main>
-                <!--${new AllProductsPage().renderHTML()}-->
-                ${new CartCheckoutPage().renderHTML()}
+                ${new AllProductsPage().renderHTML()}
+
+                <!-- ${new CartCheckoutPage().renderHTML()} -->
             </main>
             ${new FooterOrganism().renderHTML()}
         `;
