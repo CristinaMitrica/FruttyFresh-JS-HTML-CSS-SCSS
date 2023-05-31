@@ -6,7 +6,7 @@ Proyecto **Frontend** en **HTML**, **CSS** y **SCSS** para la página web fictic
 - **Buenas prácticas**: Atomic Design, BEM, Responsive Design, Mobile First, Pixel Perfect, HTML semántico, Introducción a la Accesibilidad Web.
 
 ## Diseño
-Implementación basada en un diseño de **Figma**. Los estilos de los componentes se han obtenido a través de la herramienta de inspección de Figma y mediante el pluggin Locofy.ai, el cual permite exportar los Design Tokens.
+Implementación basada en un diseño**Responsive** de **Figma**. Los estilos de los componentes se han obtenido a través de la herramienta de inspección de Figma y mediante el pluggin Locofy.ai, el cual permite exportar los Design Tokens.
 
 ![web desktop](https://user-images.githubusercontent.com/124876049/228622267-ea062354-6d5d-45eb-b3b4-010f74fe229f.jpg)
 
@@ -21,9 +21,10 @@ El código emplea las buenas prácticas de CSS y SCSS:
 - **Display Flex y Grid**
 - **Variables de CSS y SCSS**
 - **Mixins y Functions**
-- **Breakpoints Mobile First (min-width)**
+- **Breakpoints Responsive Mobile First (min-width)**
 - **Rems**
 - **BEM (clases basadas en componentes)**
+- **Baja Especificidad**
 
 Todo esto bajo una **arquitectura** **escalable** y legible basada en **Atomic Design**.
 
