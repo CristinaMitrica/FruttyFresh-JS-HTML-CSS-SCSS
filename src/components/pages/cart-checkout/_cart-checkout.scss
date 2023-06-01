@@ -8,15 +8,15 @@
     --icon-color: var(--color-blue);
 }
 
-.cart-checkout__purchase-total {
-    @include breakpoint($break-medium) {
+.cart-checkout__content {
+    @include breakpoint($break-large) {
         display: grid;
         grid-template-columns: 2fr 1fr;
         gap: var(--spacing-48);
     }
 }
 
-.cart-checkout__shopping-total {
+.cart-checkout__form {
     padding: var(--spacing-16);
     background-color: var(--color-low-grey);
     border: var(--border-width-1) solid var(--color-black);
@@ -31,10 +31,4 @@
         min-width: pxToRem(436px);
         order: 1;
     }
-}
-
-.cart-checkout__form {
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
 }

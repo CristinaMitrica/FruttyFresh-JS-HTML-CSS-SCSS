@@ -10,3 +10,9 @@ input {
 ::placeholder {
     color: var(--color-black);
 }
+
+.input-field {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-8);
+}

@@ -1,7 +1,7 @@
 .cart-card {
     display: grid;
     grid-template-columns: 1fr 3fr;
-    gap: var(--spacing-40);
+    gap: var(--spacing-16);
 }
 
 .cart-card__img-frame {
@@ -25,7 +25,7 @@
 
 .cart-card__btn {
     background-color: var(--color-red);
-
+    justify-self: end;
     @include breakpoint($break-medium) {
         width: pxToRem(164px)    
     }

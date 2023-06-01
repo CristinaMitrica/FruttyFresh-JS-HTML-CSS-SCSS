@@ -11,22 +11,22 @@ export default class CartCheckoutPage {
                     <span class="hide-accesibility">Haz click para ir a la página 'Todos los Productos'</span>
                     Volver a 'Todos los Productos'
                 </a>
-                <h1>Cesta de la compra</h1>
-                <h2>4 productos en la cesta</h2>
-                <section class="cart-checkout__purchase-total">
-                    <div class="cart-checkout__shopping-total">
-                    <p>7 productos seleccionados</p>
-                    <h3>Precio total 33€ (con IVA)</h3>
+                <h1 class="font--h1">Cesta de la compra</h1>
+                <h2 class="font--h2>4 productos en la cesta</h2>
+                <div class="cart-checkout__content">
                     <form class="cart-checkout__form">
-                        <label for="email">Email</label>
-                        <input id="email"type="email" placeholder="nombre@gmail.com" />
+                        <p>7 productos seleccionados</p>
+                        <h3 class="font--h3">Precio total 33€ (con IVA)</h3>
+                        <div class="cart-checkout__input-field input-field">
+                            <label class="input-field__label" for="email">Email</label>
+                            <input class="input-field__label" id="email"type="email" placeholder="nombre@gmail.com" />
+                        </div>
+                        <button class="cart-checkout__btn btn--filled" type="submit">Comprar</button>
                     </form>
-                    <button class="cart-checkout__btn btn--filled" type="button">Comprar</button>
-                    </div>
-                    <div class="cart-checkout__card">
+                    <div class="cart-checkout__cards">
                         ${new CartCardMolecule({name: 'Pera', price: 5}).renderHTML()}
                     </div>
-                </section>
+                </div>
 
             </div>
         `

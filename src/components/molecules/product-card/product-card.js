@@ -10,7 +10,7 @@ export default class ProductCardMolecule {
             <div class="product-card__img-frame">
                 <img class="product-card__img" src="assets/images/pera.jpg" alt="Producto pera imagen" loading="lazy">
             </div>
-            <h3>${this._name}</h3>
+            <h3 class="font--h3">${this._name}</h3>
             <p>${this._price}€</p>
             <btn class="product-card__btn btn--filled">Añadir a la cesta</btn>
         <div>
