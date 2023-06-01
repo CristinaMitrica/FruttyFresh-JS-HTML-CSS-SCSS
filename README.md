@@ -3,10 +3,10 @@ Proyecto **Frontend** en **HTML**, **CSS** y **SCSS** para la página web fictic
 
 - **Herramientas**: Visual Studio Code, Figma, Chrome Dessarollador F12, Fork, W3School HTML Validator, Can I Use, Live SASS Compiler, Chat GTP. 
 
-- **Buenas prácticas**: Atomic Design, BEM, Responsive Design, Mobile First, Pixel Perfect, HTML semántico, Introducción a la Accesibilidad Web.
+- **Buenas prácticas**: Atomic Design, BEM, Responsive Design, Mobile First, Pixel Perfect, HTML semántico, Introducción a la Accesibilidad Web, Design System.
 
 ## Diseño
-Implementación basada en un diseño**Responsive** de **Figma**. Los estilos de los componentes se han obtenido a través de la herramienta de inspección de Figma y mediante el pluggin Locofy.ai, el cual permite exportar los Design Tokens.
+Implementación basada en un diseño **Responsive** de **Figma**. Los estilos de los componentes se han obtenido a través de la herramienta de inspección de Figma y mediante el pluggin Locofy.ai, el cual permite exportar los Design Tokens.
 
 ![web desktop](https://user-images.githubusercontent.com/124876049/228622267-ea062354-6d5d-45eb-b3b4-010f74fe229f.jpg)
 
@@ -26,7 +26,7 @@ El código emplea las buenas prácticas de CSS y SCSS:
 - **BEM (clases basadas en componentes)**
 - **Baja Especificidad**
 
-Todo esto bajo una **arquitectura** **escalable** y legible basada en **Atomic Design**.
+Todo esto bajo una **arquitectura** **escalable** y legible basada en **Atomic Design**. Esta metodología me ha permitido desarrollar un **Design System**. 
 
 ![image](https://github.com/CristinaMitrica/proyecto-practica-html-css/assets/124876049/9a21d4a0-430f-45af-83b8-f96dad413bfe)
 
