@@ -339,6 +339,11 @@ input {
   height: 100%;
 }
 
+.cart-card__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 @media (min-width: 48rem) {
   .cart-card__text {
     display: grid;

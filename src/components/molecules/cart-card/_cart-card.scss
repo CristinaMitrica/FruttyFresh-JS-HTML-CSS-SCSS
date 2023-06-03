@@ -16,6 +16,10 @@
 }
 
 .cart-card__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
     @include breakpoint($break-medium) {
         display: grid; 
         grid-template-columns: 1fr 1fr; 

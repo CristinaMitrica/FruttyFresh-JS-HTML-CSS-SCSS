@@ -12,7 +12,7 @@ export default class CartCheckoutPage {
                     Volver a 'Todos los Productos'
                 </a>
                 <h1 class="font--h1">Cesta de la compra</h1>
-                <h2 class="font--h2>4 productos en la cesta</h2>
+                <h2 class="font--h2">4 productos en la cesta</h2>
                 <div class="cart-checkout__content">
                     <form class="cart-checkout__form">
                         <p>7 productos seleccionados</p>
