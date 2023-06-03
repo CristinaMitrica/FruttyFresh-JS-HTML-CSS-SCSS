@@ -6,7 +6,7 @@ export default class CartCheckoutPage {
     renderHTML() {
         return `
             <div class="cart-checkout">
-                <a class="cart-checkout__a" href="#">
+                <a class="cart-checkout__a link" href="#">
                     <span class="cart-checkout__icon-back icon--arrow-left" role="img" aria-label="Icono volver a 'Todos los Productos'"></span>
                     <span class="hide-accesibility">Haz click para ir a la página 'Todos los Productos'</span>
                     Volver a 'Todos los Productos'
