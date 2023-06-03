@@ -260,7 +260,6 @@ body {
 }
 
 input {
-  margin-top: var(--spacing-8);
   background-color: var(--color-white);
   border: var(--border-width-1) solid var(--color-black);
   border-radius: var(--border-radius-4);
@@ -274,12 +273,6 @@ input {
 
 ::placeholder {
   color: var(--color-black);
-}
-
-.input-field {
-  display: flex;
-  flex-direction: column;
-  gap: var(--spacing-8);
 }
 
 .chip--descriptor, .chip--unselected, .chip--selected {
@@ -362,6 +355,12 @@ input {
   .cart-card__btn {
     width: 10.25rem;
   }
+}
+
+.input-field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-8);
 }
 
 .header {

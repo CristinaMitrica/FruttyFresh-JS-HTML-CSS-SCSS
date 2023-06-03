@@ -15,8 +15,7 @@ export default class CartCardMolecule {
                     <h3 class="font--h3">${this._name}</h3>
                     <p>${this._price}€</p>
                 </div>
-                <btn class="cart-card__btn btn--filled">Añadir a la cesta</btn>
-                
+                <btn class="cart-card__btn btn--filled" type="button">Añadir a la cesta</btn>
             </div>
         <div>
         `

@@ -19,7 +19,7 @@ export default class CartCheckoutPage {
                         <h3 class="font--h3">Precio total 33€ (con IVA)</h3>
                         <div class="cart-checkout__input-field input-field">
                             <label class="input-field__label" for="email">Email</label>
-                            <input class="input-field__label" id="email"type="email" placeholder="nombre@gmail.com" />
+                            <input class="input-field__input" id="email" type="email" placeholder="nombre@gmail.com" />
                         </div>
                         <button class="cart-checkout__btn btn--filled" type="submit">Comprar</button>
                     </form>
@@ -27,7 +27,6 @@ export default class CartCheckoutPage {
                         ${new CartCardMolecule({name: 'Pera', price: 5}).renderHTML()}
                     </div>
                 </div>
-
             </div>
         `
     }

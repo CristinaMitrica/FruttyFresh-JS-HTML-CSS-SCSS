@@ -8,9 +8,9 @@ export default class AllProductsPage {
             <div class="all-products">
                 <h1 class="font--h1">Todos los productos</h1>
                 <div class="all-products__filters">
-                    <btn class="chip--unselected">Verduras</btn>
-                    <btn class="chip--unselected">Frutas</btn>
-                    <btn class="chip--unselected">Zumos</btn>
+                    <btn class="chip--unselected" type="button">Verduras</btn>
+                    <btn class="chip--unselected" type="button">Frutas</btn>
+                    <btn class="chip--unselected" type="button">Zumos</btn>
                 </div>
                 <h2 class="font--h2">6 resultados de productos</h2>
                 <div class="all-products__cards">

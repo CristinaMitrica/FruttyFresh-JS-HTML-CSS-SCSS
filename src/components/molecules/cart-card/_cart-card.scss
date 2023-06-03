@@ -7,7 +7,7 @@
 .cart-card__img-frame {
     border: var(--border-width-1) solid var(--color-brown);
     border-radius: var(--border-radius-4);
-    height: #{pxToRem(139px)};
+    height: pxToRem(139px);
 }
 
 .cart-card__img {
