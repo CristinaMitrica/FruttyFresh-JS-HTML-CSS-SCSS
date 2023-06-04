@@ -1,5 +1,6 @@
 import ProductCardMolecule from '../../molecules/product-card/product-card.js';
 import FiltersService from '../../../services/filters.js';
+import RenderPageService from '../../../services/render-page.js';
 
 export default class AllProductsPage {
     products = [
@@ -40,6 +41,7 @@ export default class AllProductsPage {
 function initializeFilters(filtersService) {
     const handleFilterButtonClick = (event) => {
       filtersService.handleFilterButtonClick(event);
+      
     };
     const filterButtons = document.querySelectorAll('.all-products__chip');
     filterButtons.forEach((filterButton) => {
