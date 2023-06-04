@@ -16,22 +16,19 @@ export default class FiltersService {
         return this._filters.includes(filter);
     }
 
-    _updateFilters(filter) {
-        this._isFilterActive(filter)
-        ? this._removeFilter(filter)
-        : this._addFilter(filter);
-    }
-
-    _toggleFilterButtonClass(filterButton, filter) {
-        this._isFilterActive(filter)
-        ? filterButton.classList.replace('chip--selected', 'chip--unselected')
-        : filterButton.classList.replace('chip--unselected', 'chip--selected');
+    _updateFilter(filterButton, filter) {
+        if(this._isFilterActive(filter)) {
+            filterButton.classList.replace('chip--selected', 'chip--unselected');
+            this._removeFilter(filter);
+        } else {
+            filterButton.classList.replace('chip--unselected', 'chip--selected');
+            this._addFilter(filter);
+        }
     }
 
     handleFilterButtonClick(event) {
         const filterButton = event.target;
         const filter = filterButton.dataset.filter;
-        this._updateFilters(filter);
-        this._toggleFilterButtonClass(filterButton, filter);
+        this._updateFilter(filterButton, filter);
     }
 }

@@ -1,8 +1,23 @@
 import ProductCardMolecule from '../../molecules/product-card/product-card.js';
-import FiltersService from './filters.js';
+import FiltersService from '../../../services/filters.js';
 
 export default class AllProductsPage {
+    products = [
+        {name: 'Pera', price: 5, tipo: 'fruta'},
+        {name: 'Manzana', price: 5, tipo: 'fruta'},
+        {name: 'Sandia', price: 5, tipo: 'fruta'},
+        {name: 'Zumo de Naranja', price: 5, tipo: 'zumo'},
+        {name: 'Lechuga', price: 5, tipo: 'verdura'},
+    ];
+
     constructor() {}
+
+    _renderProductCardsHTML() {
+        return this.products.map(product => {
+            const productCard = new ProductCardMolecule(product);
+            return productCard.renderHTML();
+        }).join('');
+    }
     
     renderHTML() {
         return `
@@ -15,7 +30,7 @@ export default class AllProductsPage {
                 </div>
                 <h2 class="font--h2">6 resultados de productos</h2>
                 <div class="all-products__cards">
-                    ${new ProductCardMolecule({name: 'Pera', price: 5}).renderHTML()}
+                    ${this._renderProductCardsHTML()}
                 </div>
             </div>
         `
