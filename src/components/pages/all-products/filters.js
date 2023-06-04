@@ -16,7 +16,7 @@ export default class FiltersService {
         return this._filters.includes(filter);
     }
 
-    _updateFilter(filter) {
+    _updateFilters(filter) {
         this._isFilterActive(filter)
         ? this._removeFilter(filter)
         : this._addFilter(filter);
@@ -31,7 +31,7 @@ export default class FiltersService {
     handleFilterButtonClick(event) {
         const filterButton = event.target;
         const filter = filterButton.dataset.filter;
-        this._updateFilter(filter);
+        this._updateFilters(filter);
         this._toggleFilterButtonClass(filterButton, filter);
     }
 }
