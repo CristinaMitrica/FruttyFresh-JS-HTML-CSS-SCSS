@@ -18,10 +18,11 @@ export default class AllProductsPage {
         return this._filters.includes(filter);
     }
 
-    filterProducts(filter) {
+    filterProducts(elementRef, filter) {
         this._isFilterActive(filter)
         ? this._removeFilter(filter)
         : this._addFilter(filter);
+        console.log(elementRef);
     }
 
     renderHTML() {
@@ -29,9 +30,9 @@ export default class AllProductsPage {
             <div class="all-products">
                 <h1 class="font--h1">Todos los productos</h1>
                 <div class="all-products__filters">
-                    <button class="chip--unselected" type="button" onclick="filterProducts('verduras')">Verduras</button>
-                    <button class="chip--unselected" type="button" onclick="filterProducts('frutas')">Frutas</button>
-                    <button class="chip--unselected" type="button" onclick="filterProducts('zumos')">Zumos</button>
+                    <button class="chip--unselected" type="button" onclick="${this.filterProducts(this, 'verduras')}">Verduras</button>
+                    <button class="chip--unselected" type="button" onclick="${this.filterProducts(this, 'frutas')}">Frutas</button>
+                    <button class="chip--unselected" type="button" onclick="${this.filterProducts(this, 'zumos')}">Zumos</button>
                 </div>
                 <h2 class="font--h2">6 resultados de productos</h2>
                 <div class="all-products__cards">
