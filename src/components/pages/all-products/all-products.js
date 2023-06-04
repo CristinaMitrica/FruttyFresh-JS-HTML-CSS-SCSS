@@ -1,38 +1,17 @@
 import ProductCardMolecule from '../../molecules/product-card/product-card.js';
+import FiltersService from './filters.js';
 
 export default class AllProductsPage {
-    _filters = [];
-
     constructor() {}
-
-    _addFilter(filter) {
-        this._filters = [...this._filters, filter]
-    }
-
-    _removeFilter(filter) {
-        const filterToRemoveIndex = this._filters.indexOf(filter);
-        this._filters.splice(filterToRemoveIndex, 1);
-    }
-
-    _isFilterActive(filter) {
-        return this._filters.includes(filter);
-    }
-
-    filterProducts(elementRef, filter) {
-        this._isFilterActive(filter)
-        ? this._removeFilter(filter)
-        : this._addFilter(filter);
-        console.log(elementRef);
-    }
-
+    
     renderHTML() {
         return `
             <div class="all-products">
                 <h1 class="font--h1">Todos los productos</h1>
                 <div class="all-products__filters">
-                    <button class="chip--unselected" type="button" onclick="${this.filterProducts(this, 'verduras')}">Verduras</button>
-                    <button class="chip--unselected" type="button" onclick="${this.filterProducts(this, 'frutas')}">Frutas</button>
-                    <button class="chip--unselected" type="button" onclick="${this.filterProducts(this, 'zumos')}">Zumos</button>
+                    <button class="all-products__chip chip--unselected" type="button" data-filter='verduras'>Verduras</button>
+                    <button class="all-products__chip chip--unselected" type="button" data-filter='frutas'>Frutas</button>
+                    <button class="all-products__chip chip--unselected" type="button" data-filter='zumos'>Zumos</button>
                 </div>
                 <h2 class="font--h2">6 resultados de productos</h2>
                 <div class="all-products__cards">
@@ -42,3 +21,17 @@ export default class AllProductsPage {
         `
     }
 }
+
+function initializeFilters(filtersService) {
+    const handleFilterButtonClick = (event) => {
+      filtersService.handleFilterButtonClick(event);
+    };
+    const filterButtons = document.querySelectorAll('.all-products__chip');
+    filterButtons.forEach((filterButton) => {
+        filterButton.addEventListener('click', handleFilterButtonClick);
+    });
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    initializeFilters(new FiltersService());
+});

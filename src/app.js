@@ -6,16 +6,8 @@ import FooterOrganism from './components/organisms/footer/footer.js';
 class App {
     constructor() {}
 
-    _getActivePageHTML() {
-        // cuando maquetemos la primera página recordar el concepto de
-        // acoplamiento y pasarlo como paramétro del constructor y una función setter modificador
-        const AllProductsPage = new AllProductsPage();
-        const renderedPageHTML = AllProductsPage.renderHTML();
-        return renderedPageHTML;
-    }
-
     renderHTML() {
-        const $body = document.querySelector("body");
+        const body = document.querySelector("body");
         const html = `
             ${new HeaderOrganism().renderHTML()}
             <main>
@@ -25,7 +17,7 @@ class App {
             ${new FooterOrganism().renderHTML()}
         `;
 
-        $body.innerHTML = html;
+        body.innerHTML = html;
     }
 }
 

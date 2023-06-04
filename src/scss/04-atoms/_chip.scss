@@ -15,8 +15,3 @@
     color: var(--color-black);
     border: var(--border-width-1) solid var(--color-black);
 }
-
-.chip--descriptor {
-    @extend %chip;
-    background-color: var(--color-low-grey);
-}
