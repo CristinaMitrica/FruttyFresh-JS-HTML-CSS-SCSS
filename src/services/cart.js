@@ -9,9 +9,7 @@ export default class CartService {
 
     removeProduct(id) {
         const productToRemoveIndex = this._products.findIndex(product => product.id === id);
-        let productsCopy = [...this._products];
-        productsCopy.splice(productToRemoveIndex, 1);
-        this._products = productsCopy;
+        this._products.splice(productToRemoveIndex, 1);
     }
 
     buyCart() {}
