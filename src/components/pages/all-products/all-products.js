@@ -1,23 +1,9 @@
 import ProductCardMolecule from '../../molecules/product-card/product-card.js';
 import FiltersService from '../../../services/filters.js';
-import RenderPageService from '../../../services/render-page.js';
 
 export default class AllProductsPage {
-    products = [
-        {name: 'Pera', price: 5, tipo: 'fruta'},
-        {name: 'Manzana', price: 5, tipo: 'fruta'},
-        {name: 'Sandia', price: 5, tipo: 'fruta'},
-        {name: 'Zumo de Naranja', price: 5, tipo: 'zumo'},
-        {name: 'Lechuga', price: 5, tipo: 'verdura'},
-    ];
-
-    constructor() {}
-
-    _renderProductCardsHTML() {
-        return this.products.map(product => {
-            const productCard = new ProductCardMolecule(product);
-            return productCard.renderHTML();
-        }).join('');
+    constructor(productsFetch) {
+        this._productsFetch = productsFetch;
     }
     
     renderHTML() {
@@ -31,10 +17,22 @@ export default class AllProductsPage {
                 </div>
                 <h2 class="font--h2">6 resultados de productos</h2>
                 <div class="all-products__cards">
-                    ${this._renderProductCardsHTML()}
+                    ${this._renderProductCardsHTML(this._getProducts())}
                 </div>
             </div>
         `
+    }
+
+    _getProducts() {
+        return this._productsFetch.getProducts();
+    }
+
+    _renderProductCardsHTML(products) {
+        return products.map(product => {
+            const productCard = new ProductCardMolecule(product);
+            return productCard.renderHTML();
+        })
+        .join('');
     }
 }
 

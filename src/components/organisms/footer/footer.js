@@ -1,6 +1,5 @@
 export default class FooterOrganism {
-    constructor() {
-    }
+    constructor() {}
 
     renderHTML() {
         return `

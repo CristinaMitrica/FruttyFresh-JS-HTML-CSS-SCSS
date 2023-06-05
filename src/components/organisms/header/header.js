@@ -1,6 +1,5 @@
 export default class HeaderOrganism {
-    constructor() {
-    }
+    constructor() {}
 
     renderHTML() {
         return `

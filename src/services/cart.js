@@ -12,7 +12,7 @@ export default class CartService {
         this._products.splice(productToRemoveIndex, 1);
     }
 
-    buyCart() {}
+    purchaseCart() {}
 
     _clearProducts() {
         this._products = [];

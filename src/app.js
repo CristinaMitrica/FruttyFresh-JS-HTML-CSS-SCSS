@@ -1,7 +1,7 @@
-import AllProductsPage from './components/pages/all-products/all-products.js';
-import CartCheckoutPage from './components/pages/cart-checkout/cart-checkout.js';
 import HeaderOrganism from './components/organisms/header/header.js';
+import AllProductsPage from './components/pages/all-products/all-products.js';
 import FooterOrganism from './components/organisms/footer/footer.js';
+import ProductsFetch from './fetchs/products.js';
 
 class App {
     constructor() {}
@@ -11,12 +11,10 @@ class App {
         const html = `
             ${new HeaderOrganism().renderHTML()}
             <main>
-                ${new AllProductsPage().renderHTML()}
-                <!--${new CartCheckoutPage().renderHTML()}-->
+                ${new AllProductsPage(new ProductsFetch()).renderHTML()}
             </main>
             ${new FooterOrganism().renderHTML()}
         `;
-
         body.innerHTML = html;
     }
 }
