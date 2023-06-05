@@ -3,6 +3,16 @@ export default class FiltersService {
 
     constructor() {}
 
+    handleFilterButtonClick(event) {
+        const filterButton = event.target;
+        const filter = filterButton.dataset.filter;
+        this._updateFilter(filterButton, filter);
+    }
+    
+    getFilters() {
+        return this._filters;
+    }
+
     _addFilter(filter) {
         this._filters = [...this._filters, filter];
     }
@@ -24,11 +34,5 @@ export default class FiltersService {
             filterButton.classList.replace('chip--unselected', 'chip--selected');
             this._addFilter(filter);
         }
-    }
-
-    handleFilterButtonClick(event) {
-        const filterButton = event.target;
-        const filter = filterButton.dataset.filter;
-        this._updateFilter(filterButton, filter);
     }
 }

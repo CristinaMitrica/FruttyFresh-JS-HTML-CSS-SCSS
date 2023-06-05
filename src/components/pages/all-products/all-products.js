@@ -2,8 +2,11 @@ import ProductCardMolecule from '../../molecules/product-card/product-card.js';
 import FiltersService from '../../../services/filters.js';
 
 export default class AllProductsPage {
+    _products = [];
+
     constructor(productsFetch) {
         this._productsFetch = productsFetch;
+        this._getProducts();
     }
     
     renderHTML() {
@@ -15,38 +18,46 @@ export default class AllProductsPage {
                     <button class="all-products__chip chip--unselected" type="button" data-filter='frutas'>Frutas</button>
                     <button class="all-products__chip chip--unselected" type="button" data-filter='zumos'>Zumos</button>
                 </div>
-                <h2 class="font--h2">6 resultados de productos</h2>
-                <div class="all-products__cards">
-                    ${this._renderProductCardsHTML(this._getProducts())}
+                <div id="all-products__content">
                 </div>
             </div>
         `
     }
 
     _getProducts() {
-        return this._productsFetch.getProducts();
+        this._products = this._productsFetch.getProducts();
     }
 
-    _renderProductCardsHTML(products) {
-        return products.map(product => {
-            const productCard = new ProductCardMolecule(product);
-            return productCard.renderHTML();
+    _renderProductCardsHTML() {
+        return this._products.map(product => {
+            const productCardMolecule = new ProductCardMolecule(product);
+            return productCardMolecule.renderHTML();
         })
         .join('');
     }
+
+    _renderContentHTML() {
+        const content = document.querySelector("#all-products__content");
+        content.innerHTML =
+        `
+            <h2 class="font--h2"> ${this._products.length} resultados de productos</h2>
+            <div class="all-products__cards">
+                ${this._renderProductCardsHTML()}
+            </div>
+        `
+    }
 }
 
-function initializeFilters(filtersService) {
-    const handleFilterButtonClick = (event) => {
-      filtersService.handleFilterButtonClick(event);
-      
-    };
+function registerClickOnFilters(filtersService) {
     const filterButtons = document.querySelectorAll('.all-products__chip');
     filterButtons.forEach((filterButton) => {
-        filterButton.addEventListener('click', handleFilterButtonClick);
+        filterButton.addEventListener('click', (event) => {
+            filtersService.handleFilterButtonClick(event);
+            const filters = filtersService.getFilters();
+        });
     });
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    initializeFilters(new FiltersService());
+    registerClickOnFilters(new FiltersService());
 });
