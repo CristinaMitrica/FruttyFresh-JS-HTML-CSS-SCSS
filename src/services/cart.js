@@ -4,7 +4,7 @@ export default class CartService {
     constructor() {};
 
     addProduct(product) {
-        this._products = [...this._products, product]
+        this._products = [...this._products, product];
     }
 
     removeProduct(id) {
@@ -12,7 +12,9 @@ export default class CartService {
         this._products.splice(productToRemoveIndex, 1);
     }
 
-    purchaseCart() {}
+    purchaseCart() {
+        this._clearProducts();
+    }
 
     _clearProducts() {
         this._products = [];

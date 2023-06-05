@@ -1,7 +1,7 @@
 export default class HeaderOrganism {
     constructor() {}
 
-    renderHTML() {
+    renderComponentHTML() {
         return `
             <header class="header">
                 <a class="header__a-logo" href="#">
@@ -9,7 +9,7 @@ export default class HeaderOrganism {
                     <span class="hide-accesibility">Haz click para ir a la página de inicio</span>
                 </a>
                 <button class="header__btn btn--text" type="button">
-                    <span class="icon--shopping-bag role="img" aria-label="Cesta Compra"></span>
+                    <span class="icon--shopping-bag" role="img" aria-label="Cesta Compra"></span>
                     <span class="hide-accesibility">Haz click para ver tu cesta de la compra</span>
                     Cesta
                 </button>

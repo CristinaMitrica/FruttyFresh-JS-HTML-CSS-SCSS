@@ -4,7 +4,7 @@ export default class ProductCardMolecule {
         this._price = price;
     }
 
-    renderHTML() {
+    renderComponentHTML() {
         return `
             <div class="product-card">
                 <div class="product-card__img-frame">

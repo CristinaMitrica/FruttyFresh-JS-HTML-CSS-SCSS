@@ -1,7 +1,7 @@
 export default class FooterOrganism {
     constructor() {}
 
-    renderHTML() {
+    renderComponentHTML() {
         return `
             <footer class="footer">
             </footer>

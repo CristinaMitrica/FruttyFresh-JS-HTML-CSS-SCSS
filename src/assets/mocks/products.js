@@ -1,27 +1,33 @@
 const productsMock = [
     {
-        name: 'pear',
-        price: 5
+        name: 'Pera',
+        price: 5,
+        type: 'fruta'
     },
     {
-        name: 'asparagus',
-        price: 10
+        name: 'Espárrago',
+        price: 10,
+        type: 'verdura'
     },
     {
-        name: 'onion',
-        price: 11
+        name: 'Cebolla',
+        price: 11,
+        type: 'verdura'
     },
     {
-        name: 'lemon',
-        price: 4
+        name: 'Limón',
+        price: 4,
+        type: 'fruta'
     },
     {
-        name: 'banana',
-        price: 8
+        name: 'Plátano',
+        price: 8,
+        type: 'fruta'
     },
     {
-        name: 'orange juice',
-        price: 13
+        name: 'Zumo de naranja',
+        price: 13,
+        type: 'zumo'
     }
 ];
 

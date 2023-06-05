@@ -2,21 +2,30 @@ import HeaderOrganism from './components/organisms/header/header.js';
 import AllProductsPage from './components/pages/all-products/all-products.js';
 import FooterOrganism from './components/organisms/footer/footer.js';
 import ProductsFetch from './fetchs/products.js';
+import FiltersService from './services/filters.js';
 
 class App {
-    constructor() {}
+    constructor() {
+        this.allProductsPage = new AllProductsPage(
+            new ProductsFetch(), 
+            new FiltersService(),
+        );
+    }
 
-    renderHTML() {
+    renderComponentHTML() {
         const body = document.querySelector("body");
         const html = `
-            ${new HeaderOrganism().renderHTML()}
+            ${new HeaderOrganism().renderComponentHTML()}
             <main>
-                ${new AllProductsPage(new ProductsFetch()).renderHTML()}
+                ${this.allProductsPage.renderComponentHTML()}
             </main>
-            ${new FooterOrganism().renderHTML()}
+            ${new FooterOrganism().renderComponentHTML()}
         `;
         body.innerHTML = html;
     }
 }
 
-new App().renderHTML();
+const app = new App();
+app.renderComponentHTML();
+
+export default app;
