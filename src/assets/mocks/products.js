@@ -9,19 +9,19 @@ const productsMock = [
     },
     {
         name: 'onion',
-        price: 12
-    },
-    {
-        name: 'lemon',
         price: 11
     },
     {
+        name: 'lemon',
+        price: 4
+    },
+    {
         name: 'banana',
-        price: 3
+        price: 8
     },
     {
         name: 'orange juice',
-        price: 4
+        price: 13
     }
 ];
 
