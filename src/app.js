@@ -6,10 +6,14 @@ import FiltersService from './services/filters.js';
 
 class App {
     constructor() {
-        this.allProductsPage = new AllProductsPage(
+        this._allProductsPage = new AllProductsPage(
             new ProductsFetch(), 
             new FiltersService(),
         );
+    }
+
+    getAllProductsPage() {
+        return this._allProductsPage;
     }
 
     renderComponentHTML() {
@@ -17,7 +21,7 @@ class App {
         const html = `
             ${new HeaderOrganism().renderComponentHTML()}
             <main>
-                ${this.allProductsPage.renderComponentHTML()}
+                ${this._allProductsPage.renderComponentHTML()}
             </main>
             ${new FooterOrganism().renderComponentHTML()}
         `;
