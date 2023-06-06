@@ -4,7 +4,6 @@ import AllProductsPage from './components/pages/all-products/all-products.js';
 import ProductsFetch from './fetchs/products.js';
 import FiltersService from './services/filters.js';
 
-
 class App {
     constructor() {
         this.allProductsPage = new AllProductsPage(
