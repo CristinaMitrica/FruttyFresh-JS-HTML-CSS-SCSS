@@ -1,7 +1,7 @@
 # Motorcycle
 Proyecto **Frontend** en **HTML**, **CSS** y **SCSS** para la página web ficticia de Motorcycle.
 
-- **Herramientas**: Visual Studio Code, Figma, Chrome Dessarollador F12, Fork, W3School HTML Validator, Can I Use, Live SASS Compiler, Chat GTP. 
+- **Herramientas**: Visual Studio Code, Figma, Chrome Dessarollador F12, Git Fork, Chat GTP. 
 
 - **Buenas prácticas**: Atomic Design, BEM, Responsive Design, Mobile First, Pixel Perfect, HTML semántico, Introducción a la Accesibilidad Web, Design System.
 
