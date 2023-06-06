@@ -18,7 +18,7 @@ El código emplea buenas las prácticas de Javascript:
 - **Template Literals**
 - **Spread**
 - **Rest Parameters**
-- **Ternarias*
+- **Ternarias**
 - **Queryselector y Event Listeners**
 - **Mocks**
 - **ESModules**
@@ -42,11 +42,9 @@ El código emplea las buenas prácticas de CSS y SCSS:
 
 Todo esto bajo una **arquitectura** **escalable** y legible basada en **Atomic Design**. Esta metodología me ha permitido desarrollar un **Design System**. 
 
-![image](https://github.com/CristinaMitrica/proyecto-practica-html-css/assets/124876049/9a21d4a0-430f-45af-83b8-f96dad413bfe)
-
 Durante el desarrollo del código en SCSS, se ha **validado que el código CSS resultante es el esperado**. Para ello, se han hecho revisiones del CSS compilado y se ha usado la herramienta CSS Specificity Graph Generator para validar la especificidad.
 
-![specificity](https://user-images.githubusercontent.com/124876049/228622425-f06d8395-31a7-4a4f-8fb2-488d9de7a0f5.png)
+![image](https://github.com/CristinaMitrica/FruttyFresh-JS-HTML-CSS-SCSS/assets/124876049/e775eff3-edd0-4e24-97b7-14092fd5e70b)
 
 ## Cursos
 - OpenBootcamp. Curso de HTML y CSS.
