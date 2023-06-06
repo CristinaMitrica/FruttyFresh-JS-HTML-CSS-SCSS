@@ -17,7 +17,7 @@ El código emplea buenas las prácticas de Javascript:
 - **Métodos de arrays (filter, includes, map, etc.)**
 - **Template Literals**
 - **Spread**
-- **Rest Parameters**
+- **Desestructuración*
 - **Ternarias**
 - **Queryselector y Event Listeners**
 - **Mocks**
@@ -45,6 +45,10 @@ Todo esto bajo una **arquitectura** **escalable** y legible basada en **Atomic D
 Durante el desarrollo del código en SCSS, se ha **validado que el código CSS resultante es el esperado**. Para ello, se han hecho revisiones del CSS compilado y se ha usado la herramienta CSS Specificity Graph Generator para validar la especificidad.
 
 ![image](https://github.com/CristinaMitrica/FruttyFresh-JS-HTML-CSS-SCSS/assets/124876049/e775eff3-edd0-4e24-97b7-14092fd5e70b)
+
+## Arquitectura
+
+![image](https://github.com/CristinaMitrica/FruttyFresh-JS-HTML-CSS-SCSS/assets/124876049/8d6c2109-9cba-4b4f-95e6-ec65d30ccb81)
 
 ## Cursos
 - OpenBootcamp. Curso de HTML y CSS.
