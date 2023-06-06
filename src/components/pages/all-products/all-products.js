@@ -75,6 +75,7 @@ export default class AllProductsPage {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    app.allProductsPage.registerClickEventOnFilters();
-    app.allProductsPage.filterProducts();
+    const allProductsPage = app.getAllProductsPage();
+    allProductsPage.registerClickEventOnFilters();
+    allProductsPage.filterProducts();
 });
