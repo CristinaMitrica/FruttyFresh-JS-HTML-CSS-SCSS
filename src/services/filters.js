@@ -7,9 +7,10 @@ export default class FiltersService {
         const filterButton = event.target;
         const filter = filterButton.dataset.filter;
         this._updateFilter(filterButton, filter);
+        return this._getFilters();
     }
     
-    getFilters() {
+    _getFilters() {
         return this._filters;
     }
 

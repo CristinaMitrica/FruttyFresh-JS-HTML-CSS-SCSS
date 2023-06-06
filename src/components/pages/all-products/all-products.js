@@ -40,16 +40,13 @@ export default class AllProductsPage {
         filterButtons.forEach((filterButton) => {
             filterButton.addEventListener(
                 'click', 
-                (event) => this._onClickFilterActions(
-                    event, 
-                    this._filtersService
-            ));
+                (event) => this._onClickFilterActions(event)
+            );
         });
     }
     
     _onClickFilterActions(event) {
-        this._filtersService.handleFilterButtonClick(event);
-        const filters = this._filtersService.getFilters();
+        const filters = this._filtersService.handleFilterButtonClick(event);
         this.filterProducts(filters);
     }
 

@@ -1,8 +1,9 @@
-import HeaderOrganism from './components/organisms/header/header.js';
-import AllProductsPage from './components/pages/all-products/all-products.js';
+import HeaderOrganism from './components/orimage.pngganisms/header/header.js';
 import FooterOrganism from './components/organisms/footer/footer.js';
+import AllProductsPage from './components/pages/all-products/all-products.js';
 import ProductsFetch from './fetchs/products.js';
 import FiltersService from './services/filters.js';
+
 
 class App {
     constructor() {
