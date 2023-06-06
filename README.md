@@ -17,7 +17,7 @@ El código emplea buenas las prácticas de Javascript:
 - **Métodos de arrays (filter, includes, map, etc.)**
 - **Template Literals**
 - **Spread**
-- **Desestructuración*
+- **Desestructuración**
 - **Ternarias**
 - **Queryselector y Event Listeners**
 - **Mocks**
