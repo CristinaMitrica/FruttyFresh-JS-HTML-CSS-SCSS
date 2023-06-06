@@ -25,7 +25,7 @@ const productsMock = [
         type: 'fruta'
     },
     {
-        name: 'Zumo de naranja',
+        name: 'Zumo',
         price: 13,
         type: 'zumo'
     }

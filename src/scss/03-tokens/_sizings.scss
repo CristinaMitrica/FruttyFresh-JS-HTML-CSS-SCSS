@@ -1,4 +1,5 @@
 @mixin sizings {
     --input-and-btn-height: #{pxToRem(48px)};
     --header-height: #{pxToRem(72px)};
+    --footer-height: #{pxToRem(72px)};
 }

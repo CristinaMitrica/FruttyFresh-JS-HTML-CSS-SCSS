@@ -165,6 +165,7 @@ body {
   --border-width-1: 0.0625rem;
   --input-and-btn-height: 3rem;
   --header-height: 4.5rem;
+  --footer-height: 4.5rem;
 }
 
 html {
@@ -337,13 +338,14 @@ input {
 }
 
 .footer {
-  height: var(--header-height);
+  height: var(--footer-height);
   background-color: var(--color-low-grey);
 }
 
 main {
   margin-top: var(--header-height);
   padding: var(--spacing-64) var(--spacing-32);
+  min-height: calc(100vh - var(--footer-height) - var(--header-height));
 }
 
 .all-products__filters {
