@@ -8,7 +8,7 @@ Proyecto **Frontend** en **HTML**, **CSS** y **SCSS** para la página web fictic
 ## Diseño
 Implementación basada en un diseño **Responsive** de **Figma**. Los estilos de los componentes se han obtenido a través de la herramienta de inspección de Figma y mediante el pluggin Locofy.ai, el cual permite exportar los Design Tokens.
 
-![web desktop](https://user-images.githubusercontent.com/124876049/228622267-ea062354-6d5d-45eb-b3b4-010f74fe229f.jpg)
+![FruttyFresh](https://github.com/CristinaMitrica/FruttyFresh-JS-HTML-CSS-SCSS/assets/124876049/34024c5f-4f82-42eb-89f2-7a560312e4fc)
 
 ## HTML
 **HTML** **semántico** usando las **buenas prácticas** de la **W3School** y la herramienta W3School Web Validator. Las clases se escriben bajo la la nomenclatura **BEM**, para facilizar la componetización y conseguir una baja especificidad.
