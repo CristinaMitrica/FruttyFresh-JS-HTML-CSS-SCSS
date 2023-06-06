@@ -1,5 +1,7 @@
 main {
-    margin-top: var(--header-height);
-    padding: var(--spacing-64) var(--spacing-32);
-    min-height: calc(100vh - var(--footer-height) - var(--header-height));
+    padding-left: var(--spacing-32);
+    padding-right: var(--spacing-32);
+    padding-top: calc(var(--spacing-64) + var(--header-height));
+    padding-bottom: var(--spacing-64);
+    min-height: calc(100vh - var(--footer-height));
 }
