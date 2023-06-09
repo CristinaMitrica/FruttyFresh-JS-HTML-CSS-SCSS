@@ -8,7 +8,7 @@ Proyecto **Frontend** en **Javacript**, **HTML**, **CSS** y **SCSS** para la pá
 ## Diseño
 Implementación basada en un diseño **Responsive** de **Figma**. Los estilos de los componentes se han obtenido a través de la herramienta de inspección de Figma y mediante el pluggin Locofy.ai, el cual permite exportar los Design Tokens.
 
-![FruttyFresh](https://github.com/CristinaMitrica/FruttyFresh-JS-HTML-CSS-SCSS/assets/124876049/34024c5f-4f82-42eb-89f2-7a560312e4fc)
+![figma](https://github.com/CristinaMitrica/FruttyFresh-JS-HTML-CSS-SCSS/assets/124876049/83a3fb34-201c-43f5-aa20-73d24d6fc924)
 
 ## Javascript
 
@@ -44,11 +44,11 @@ Todo esto bajo una **arquitectura** **escalable** y legible basada en **Atomic D
 
 Durante el desarrollo del código en SCSS, se ha **validado que el código CSS resultante es el esperado**. Para ello, se han hecho revisiones del CSS compilado y se ha usado la herramienta CSS Specificity Graph Generator para validar la especificidad.
 
-![image](https://github.com/CristinaMitrica/FruttyFresh-JS-HTML-CSS-SCSS/assets/124876049/e775eff3-edd0-4e24-97b7-14092fd5e70b)
+![specificity](https://github.com/CristinaMitrica/FruttyFresh-JS-HTML-CSS-SCSS/assets/124876049/37ca0c14-e305-4dad-a985-17e7167df3a4)
 
 ## Arquitectura
 
-![image](https://github.com/CristinaMitrica/FruttyFresh-JS-HTML-CSS-SCSS/assets/124876049/8d6c2109-9cba-4b4f-95e6-ec65d30ccb81)
+![atomicDesign](https://github.com/CristinaMitrica/FruttyFresh-JS-HTML-CSS-SCSS/assets/124876049/9651788e-dad6-4516-837f-05c5dc57c525)
 
 ## Cursos
 - OpenBootcamp. Curso de HTML y CSS.
