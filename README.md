@@ -50,13 +50,13 @@ Durante el desarrollo del código en SCSS, se ha **validado que el código CSS r
 
 ![atomicDesign](https://github.com/CristinaMitrica/FruttyFresh-JS-HTML-CSS-SCSS/assets/124876049/9651788e-dad6-4516-837f-05c5dc57c525)
 
-## Cursos
+## Formación
 - OpenBootcamp. Curso de HTML y CSS.
 - OpenBootcamp. Curso de Javascript.
 - Udemy. Curso CSS La Guía Completa - Flexbox, CSS Grid, SASS +20 proyectos.
 - Udemy. Curso de Principios SOLID y Clean Code.
 
-## Referencias
+## Recursos
 - https://www.w3schools.com/
 - https://developer.mozilla.org/es/
 - https://sass-lang.com/
