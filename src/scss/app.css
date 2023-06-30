@@ -164,7 +164,6 @@ body {
   --border-radius-4: 0.25rem;
   --border-width-1: 0.0625rem;
   --input-and-btn-height: 3rem;
-  --header-height: 4.5rem;
   --footer-height: 4.5rem;
 }
 
@@ -319,13 +318,12 @@ input {
 }
 
 .header {
-  height: var(--header-height);
   background-color: var(--color-low-grey);
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: var(--spacing-12) var(--spacing-32);
-  position: fixed;
+  position: sticky;
   z-index: var(--zindex-header);
   top: 0;
   left: 0;
@@ -345,7 +343,7 @@ input {
 main {
   padding-left: var(--spacing-32);
   padding-right: var(--spacing-32);
-  padding-top: calc(var(--spacing-64) + var(--header-height));
+  padding-top: calc(var(--spacing-64));
   padding-bottom: var(--spacing-64);
   min-height: calc(100vh - var(--footer-height));
 }
