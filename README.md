@@ -11,7 +11,6 @@ Implementación basada en un diseño **Responsive** de **Figma**. Los estilos de
 ![figma](https://github.com/CristinaMitrica/FruttyFresh-JS-HTML-CSS-SCSS/assets/124876049/83a3fb34-201c-43f5-aa20-73d24d6fc924)
 
 ## Javascript
-
 El código emplea buenas las prácticas de Javascript:
 - **Arrow Functions**
 - **Métodos de arrays (filter, includes, map, etc.)**
