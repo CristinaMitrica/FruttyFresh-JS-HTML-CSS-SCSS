@@ -4,4 +4,5 @@ main {
     padding-top: calc(var(--spacing-64));
     padding-bottom: var(--spacing-64);
     min-height: calc(100vh - var(--footer-height));
+    flex: 1;
 }

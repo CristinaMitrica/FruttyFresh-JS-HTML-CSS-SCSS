@@ -317,6 +317,11 @@ input {
   background-color: var(--color-brown);
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+}
+
 .header {
   background-color: var(--color-low-grey);
   display: flex;
@@ -335,17 +340,18 @@ input {
   width: 9.25rem;
 }
 
-.footer {
-  height: var(--footer-height);
-  background-color: var(--color-low-grey);
-}
-
 main {
   padding-left: var(--spacing-32);
   padding-right: var(--spacing-32);
   padding-top: calc(var(--spacing-64));
   padding-bottom: var(--spacing-64);
   min-height: calc(100vh - var(--footer-height));
+  flex: 1;
+}
+
+.footer {
+  height: var(--footer-height);
+  background-color: var(--color-low-grey);
 }
 
 .all-products__filters {
